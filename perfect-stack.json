@@ -1,0 +1,25 @@
+{
+  "name": "perfect-stack-template",
+  "knowabungaDisplayName" "Perfect Stack Template"
+  "version": "0.0.1",
+  "description": "An example config to demonstrate the configuration for the perfect stack",
+  "contributors": [{
+      "name": "Örjan Sjöholm",
+      "email": "orjan.sjoholm@tretton37.com"
+    }, {
+      "name": "Daniel Dani",
+      "email": "daniel.dani@tretton37.com"
+    }
+  ],
+  "homepage": "https://github.com/tretton37/perfect-stack-template",
+  "keywords": ["template", "static"],
+  "_knowabungaCategories": [
+    "web-application", 
+    "mobile-web",
+    "single-page-app",
+    "background-job",
+    "desktop-app",
+    "windows-phone"
+  ],
+  "knowabungaCategory": "web-application"
+}
