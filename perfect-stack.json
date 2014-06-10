@@ -1,8 +1,9 @@
 {
   "name": "perfect-stack-template",
-  "knowabungaDisplayName" "Perfect Stack Template"
+  "knowabungaDisplayName" "Perfect Stack Template",
   "version": "0.0.1",
   "description": "An example config to demonstrate the configuration for the perfect stack",
+  "license" : "MIT",
   "contributors": [{
       "name": "Örjan Sjöholm",
       "email": "orjan.sjoholm@tretton37.com"
@@ -11,6 +12,10 @@
       "email": "daniel.dani@tretton37.com"
     }
   ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/tretton37/perfect-stack-template.git"
+  },
   "homepage": "https://github.com/tretton37/perfect-stack-template",
   "keywords": ["template", "static"],
   "_knowabungaCategories": [
