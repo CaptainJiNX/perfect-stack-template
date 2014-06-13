@@ -1,23 +1,29 @@
 {
-  "name": "perfect-stack-template",
-  "knowabungaDisplayName" "Perfect Stack Template",
+  "name": "perfect-spa-template",
+  "knowabungaDisplayName" "Perfect SPA Template",
   "version": "0.0.1",
-  "description": "An example config to demonstrate the configuration for the perfect stack",
+  "description": "Simple boiler plate to quickly get up and running with angular.js",
   "license" : "MIT",
   "contributors": [{
-      "name": "Örjan Sjöholm",
-      "email": "orjan.sjoholm@tretton37.com"
+      "name": "Artem Konovalenkov",
+      "email": "artem.konovalenkov@tretton37.com"
     }, {
       "name": "Daniel Dani",
       "email": "daniel.dani@tretton37.com"
+    }, {
+      "name": "Bernardo Antunes",
+      "email": "bernardo.antunes@tretton37.com"
+    }, {
+      "name": "Roger Wilson",
+      "email": "roger.wilson@tretton37.com"
     }
   ],
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/tretton37/perfect-stack-template.git"
+    "url" : "https://github.com/CaptainJiNX/perfect-stack-template.git"
   },
-  "homepage": "https://github.com/tretton37/perfect-stack-template",
-  "keywords": ["template", "static"],
+  "homepage": "https://github.com/CaptainJiNX/perfect-stack-template",
+  "keywords": ["spa", "angularjs", "grunt"],
   "_knowabungaCategories": [
     "web-application", 
     "mobile-web",
@@ -26,5 +32,5 @@
     "desktop-app",
     "windows-phone"
   ],
-  "knowabungaCategory": "web-application"
+  "knowabungaCategory": "single-page-app"
 }
