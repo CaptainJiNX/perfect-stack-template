@@ -6,7 +6,7 @@ module.exports = function (grunt) {
   var pkg = require('./package'),
       path = require('path'),
       modulename = pkg.title || pkg.name;
-      
+
   /**
    * HTML Minify Options
    */
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 1337,
-        hostname: '*'
+        hostname: 'localhost'
       },
       livereload: {
         options: {
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
         tasks: ['html2js:app', 'injector:app']
       },
       index: {
-        files: ['<%= dirs.app %>/<%= modulename %>.html'],
+        files: ['<%= dirs.app %>/index.html'],
         tasks: ['injector:app', 'copy:index']
       },
       app: {
@@ -159,7 +159,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= dirs.app %>',
-          src: ['**/*.html', '!<%= modulename %>.html'],
+          src: ['**/*.html', '!index.html'],
           dest: '<%= dirs.temp %>',
           rename: function () {
             return '<%= dirs.temp %>/<%= modulename %>Templates.js';
@@ -173,7 +173,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= dirs.app %>',
-          src: ['**/*.html', '!<%= modulename %>.html'],
+          src: ['**/*.html', '!index.html'],
           dest: '<%= dirs.temp %>',
           rename: function () {
             return '<%= dirs.temp %>/<%= modulename %>Templates.js';
@@ -232,7 +232,7 @@ module.exports = function (grunt) {
      */
     injector: {
       options: {
-        destFile: '<%= dirs.app %>/<%= modulename %>.html'
+        destFile: '<%= dirs.app %>/index.html'
       },
 
       /**
@@ -335,7 +335,7 @@ module.exports = function (grunt) {
 
     copy: {
       index: {
-        src: '<%= dirs.app %>/<%= modulename %>.html',
+        src: '<%= dirs.app %>/index.html',
         dest: '<%= dirs.temp %>/index.html'
       },
     },
