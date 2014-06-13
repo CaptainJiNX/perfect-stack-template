@@ -349,8 +349,7 @@ module.exports = function (grunt) {
       },
       app: {
         src: [
-          '<%= dirs.app %>/<%= modulename %>.js',
-          '<%= dirs.app %>/**/index.js',
+          '<%= dirs.app %>/app.js',
           '<%= dirs.app %>/**/*.js',
           '<%= dirs.temp %>/*.js',
           '!<%= dirs.app %>/**/*.spec.js'
