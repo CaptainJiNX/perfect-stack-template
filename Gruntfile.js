@@ -232,7 +232,7 @@ module.exports = function (grunt) {
      */
     injector: {
       options: {
-        destFile: '<%= dirs.app %>/index.html'
+        destFile: '<%= dirs.temp %>/index.html'
       },
 
       /**
@@ -417,8 +417,8 @@ module.exports = function (grunt) {
     'clean:temp',
     'html2js:app',
     'jshint:app',
-    'injector:app',
-    'copy:index'
+    'copy:index',
+    'injector:app'
   ]);
 
   grunt.registerTask('dist', [
@@ -429,8 +429,8 @@ module.exports = function (grunt) {
     'jshint:app',
     'ngmin',
     'uglify',
-    'injector:dist',
     'copy:index',
+    'injector:dist',
     'htmlmin:dist'
   ]);
 
