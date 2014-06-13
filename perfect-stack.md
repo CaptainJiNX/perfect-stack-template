@@ -1,31 +1,43 @@
-# Template for the Perfect Stack
-Write a short abstract, that describes the stack in a couple of sentenses.
-After reading the abstract a reader should have a pretty clear view of the purpose with the stack.
+# Template for the Perfect SPA
+This is a boilerplate to be used when you want to create a single page application with angular.js.
 
-## Explanation of the building blocks inside your stack
-The perfect stack template consists of 
+## Building blocks
+The perfect stack template consists of:
+* Grunt
+* Bower
+* Angular.js
 
 ### Prerequisites
-You need to download... And have these applications installed.
+* node.js and npm (installation depends on platform)
+* npm install -g grunt-cli
+* npm install -g bower
 
 ### Installation
-Git clone http://..... 
+* git clone https://github.com/CaptainJiNX/perfect-stack-template
+* npm install
+* bower install
+* npm run dev - will start the app in dev mode without minification and stuff
+* npm start - will start the app in production mode
+* npm test - will run all jasmine test with Karma
 
 ### Directory Layout
-    Application/
-            Core/               =>     Core part of stack
-              Class1.cs         =>     First class
-            Ui/                 =>     Frontend 
-            Services/           =>     Handling the ...
-
+    src/
+            app/              	=> Application root
+              app.js         	=> Application container module
+              index.html     	=> Index page 
+              shell/
+                controllers/	
+            	  shell-controller.js => Simple example controller for the Shell module
+            	shell-module.js => Simple example module
+            	specs/
+            	  shell-controller.spec.js => Jasmine specifications for the controller
 
 ## Strengths
-* This stack is very flexible.
+* This stack is very easy to build upon, because all the plumming is taken care of with grunt.
 
 ## Weaknesses
-* This stack is not used in production yet.
+* Are you kidding me? ;)
 
 ## Possible improvements and extensions
-* Create a generator for the perfect-stack.json
-* Create a parser that gathers data from all created stacks
-* Create a homepage that makes it possible to select the perfect stack for your new project.
+* Adding folder structure for directives, services etc.
+* Create docker.io image for this
