@@ -1,0 +1,20 @@
+{
+  "name": "SPAngular",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "Daniel Dani <daniel.dani@live.se>"
+  ],
+  "description": "The perfect stack for SPA's",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "yui"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.2.17"
+  }
+}
