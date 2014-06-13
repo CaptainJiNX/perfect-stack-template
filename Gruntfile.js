@@ -110,8 +110,8 @@ module.exports = function (grunt) {
         tasks: ['html2js:app', 'injector:app']
       },
       index: {
-        files: ['<%= dirs.app %>/index.html'],
-        tasks: ['injector:app', 'copy:index']
+        files: ['<%= dirs.app %>/app.html'],
+        tasks: ['copy:index', 'injector:app']
       },
       app: {
         files: ['<%= dirs.app %>/**/*.js', '!<%= dirs.app %>/**/*.spec.js'],
@@ -159,7 +159,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= dirs.app %>',
-          src: ['**/*.html', '!index.html'],
+          src: ['**/*.html', '!app.html'],
           dest: '<%= dirs.temp %>',
           rename: function () {
             return '<%= dirs.temp %>/<%= modulename %>Templates.js';
@@ -173,7 +173,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= dirs.app %>',
-          src: ['**/*.html', '!index.html'],
+          src: ['**/*.html', '!app.html'],
           dest: '<%= dirs.temp %>',
           rename: function () {
             return '<%= dirs.temp %>/<%= modulename %>Templates.js';
@@ -336,7 +336,7 @@ module.exports = function (grunt) {
 
     copy: {
       index: {
-        src: '<%= dirs.app %>/index.html',
+        src: '<%= dirs.app %>/app.html',
         dest: '<%= dirs.temp %>/index.html'
       },
     },

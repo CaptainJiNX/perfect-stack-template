@@ -24,7 +24,7 @@ The perfect stack template consists of:
     src/
             app/              	=> Application root
               app.js         	=> Application container module
-              index.html     	=> Index page 
+              app.html     	=> Index page for application 
               shell/
                 controllers/	
             	  shell-controller.js => Simple example controller for the Shell module
