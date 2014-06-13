@@ -13,11 +13,17 @@ module.exports = function ( karma ) {
      */
     files: [
       /** injector:js **/
+      'bower_components/angular/angular.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'src/app/shell/shell-module.js',
+      'src/app/shell/controllers/shell-controller.js',
+      'src/app/app.js',
+      'src/app/shell/specs/shell-controller.spec.js',
       /** endinjector **/
     ],
 
     frameworks: [ 'jasmine' ],
-    plugins: [ 'karma-phantomjs-launcher' ],
+    plugins: [ 'karma-jasmine', 'karma-phantomjs-launcher', 'karma-chrome-launcher' ],
 
     /**
      * How to report, by default.

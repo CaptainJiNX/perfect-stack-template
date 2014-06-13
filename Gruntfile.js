@@ -258,7 +258,8 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: '<%= dirs.app %>',
-            src: ['<%= modulename %>.js', '**/index.js', '**/*.js', '!**/*.spec.js']
+            //src: ['<%= modulename %>.js', '**/index.js', '**/*.js', '!**/*.spec.js']
+            src: ['**/*module.js', '**/*.js', '!**/*.spec.js', '!app.js', 'app.js']
           },
           {
             expand: true,
@@ -287,7 +288,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: '<%= dirs.app %>',
-            src: ['<%= modulename %>.js', '**/index.js', '**/*.js', '!**/*.spec.js']
+            src: ['**/*module.js', '**/*.js', '!**/*.spec.js', '!app.js', 'app.js']
           },
           {
             expand: true,
@@ -349,10 +350,12 @@ module.exports = function (grunt) {
       },
       app: {
         src: [
-          '<%= dirs.app %>/app.js',
+          '<%= dirs.app %>/**/*module.js',
           '<%= dirs.app %>/**/*.js',
-          '<%= dirs.temp %>/*.js',
-          '!<%= dirs.app %>/**/*.spec.js'
+          '!<%= dirs.app %>/**/*.spec.js',
+          //remove app.js from the middle of the concat
+          '!<%= dirs.app %>/app.js',
+          '<%= dirs.app %>/app.js'
         ],
         dest: '<%= dirs.dist %>/<%= modulename %>.js'
       },
