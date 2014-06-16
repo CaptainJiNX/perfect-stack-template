@@ -1,6 +1,6 @@
 {
   "name": "perfect-spa-template",
-  "knowabungaDisplayName" "Perfect SPA Template",
+  "knowabungaDisplayName": "Perfect SPA Template",
   "version": "0.0.1",
   "description": "Simple boiler plate to quickly get up and running with angular.js",
   "license" : "MIT",
